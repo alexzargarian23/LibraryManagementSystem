@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library>
+    <book>
+        <author>F. Scott Fitzgerald</author>
+        <borrowed>false</borrowed>
+        <category>FICTION</category>
+        <countOfBook>5</countOfBook>
+        <isbn>978-0743273565</isbn>
+        <title>The Great Gatsby</title>
+        <year>1925</year>
+    </book>
+    <book>
+        <author>Stephen Hawking</author>
+        <borrowed>false</borrowed>
+        <category>SCIENCE</category>
+        <countOfBook>2</countOfBook>
+        <isbn>978-0553380163</isbn>
+        <title>A Brief History of Time</title>
+        <year>1988</year>
+    </book>
+</library>

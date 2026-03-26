@@ -1,3 +1,6 @@
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+@XmlRootElement(name = "book")
 public class Book{
 
 
@@ -19,31 +22,34 @@ public class Book{
         this.countOfBook = countOfBook;
         this.isBorrowed = isBorrowed;
     }
+    public Book(){
 
+    }
+    @XmlElement
     public String getTitle() {
         return title;
     }
-
+    @XmlElement
     public String getAuthor() {
         return author;
     }
-
+    @XmlElement
     public String getIsbn() {
         return isbn;
     }
-
+    @XmlElement
     public Category getCategory() {
         return category;
     }
-
+    @XmlElement
     public int getYear() {
         return year;
     }
-
+    @XmlElement
     public int getCountOfBook() {
         return countOfBook;
     }
-
+    @XmlElement
     public boolean isBorrowed() {
         return isBorrowed;
     }

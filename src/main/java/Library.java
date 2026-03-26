@@ -61,7 +61,13 @@ return null;
             }
         }
     }
+    public void saveToFile(String path) {
+        XMLHandler.marshal(this.books, path);
+    }
 
+    public void loadFromFile(String path) {
+        this.books = XMLHandler.unmarshal(path);
+    }
     @Override
     public String toString() {
         return "Library{" + "books=" + books + '}';

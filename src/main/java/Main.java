@@ -12,6 +12,7 @@ public class Main {
         // 2. Create our single user
         Memeber student = new Memeber("Alex");
 
+
         boolean running = true;
         while (running) {
             System.out.println("\n--- Library System ---");
@@ -57,10 +58,19 @@ public class Main {
                     }
                     break;
                 case 4:
+
+                    // --- THE XML TRIGGER ---
+                    System.out.println("Saving library state to XML...");
+                    myLibrary.saveToFile("library.xml");
+                    // -----------------------
+
                     running = false;
                     break;
+                default:
+                    System.out.println("Invalid choice. Try again.");
             }
         }
+        scanner.close(); // Good practice to close the scanner
         System.out.println("Goodbye!");
     }
 }
